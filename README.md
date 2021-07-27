@@ -1,2 +1,3 @@
 # pylibs
-Repository with small auxiliary libs written in Python 3
+
+A bunch of simple auxiliary libs written in Python 3
