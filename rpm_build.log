@@ -1,0 +1,82 @@
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.BfOAwM
++ umask 022
++ cd /home/rpmbuilder/rpmbuild/BUILD
++ rm -fr /home/rpmbuilder/work/build
++ mkdir /home/rpmbuilder/work/build
++ cd /home/rpmbuilder/work/build
++ curl -o archive.tar.gz -K /home/rpmbuilder/gitlab_config.txt 'https://gitlab.asgardahost.ru/api/v4/projects/104/repository/archive.tar.gz?sha=master'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 10057    0 10057    0     0  49247      0 --:--:-- --:--:-- --:--:-- 49299
++ tar -xvzf archive.tar.gz
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/.gitignore
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/.gitlab-ci.yml
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/BUILD_DEPS_REPO/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/BUILD_DEPS_REPO/build-deps.repo
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/LICENSE
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/README.md
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/SPEC/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/SPEC/pylibs.spec
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/ansible/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/ansible/AnsibleInventoryFormat.py
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/databases/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/databases/DatabaseConnector.py
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/execexternal/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/execexternal/ExecExternal.py
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/gitlab/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/gitlab/Gitlab.py
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/ownvault/
+pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f/src/ownvault/GPGBackend.py
++ rm -f archive.tar.gz
+++ ls
++ SRC_DIR=pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f
++ mv pylibs-master-3411849d0563a11b664495ae390a23e4784bfb0f pylibs
++ cd pylibs
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.g9uQfs
++ umask 022
++ cd /home/rpmbuilder/rpmbuild/BUILD
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.d7aoZ7
++ umask 022
++ cd /home/rpmbuilder/rpmbuild/BUILD
++ '[' /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64 '!=' / ']'
++ rm -rf /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64
+++ dirname /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64
++ mkdir -p /home/rpmbuilder/rpmbuild/BUILDROOT
++ mkdir /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64
++ cd /home/rpmbuilder/work/build/pylibs
++ mkdir -p /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs
++ mkdir /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/ansible
++ mkdir /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/databases
++ mkdir /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/execexternal
++ mkdir /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/gitlab
++ mkdir /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/ownvault
++ install -m 700 src/ansible/AnsibleInventoryFormat.py /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/ansible/AnsibleInventoryFormat.py
++ install -m 700 src/databases/DatabaseConnector.py /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/databases/DatabaseConnector.py
++ install -m 700 src/execexternal/ExecExternal.py /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/execexternal/ExecExternal.py
++ install -m 700 src/gitlab/Gitlab.py /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/gitlab/Gitlab.py
++ install -m 700 src/ownvault/GPGBackend.py /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64//opt/pylibs/ownvault/GPGBackend.py
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-compress
++ /usr/lib/rpm/redhat/brp-strip /usr/bin/strip
++ /usr/lib/rpm/redhat/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/redhat/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/redhat/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: pylibs-0.2-1.el7.noarch
+Provides: AnsibleInventoryFormat.py DatabaseConnector.py ExecExternal.py GPGBackend.py Gitlab.py pylibs = 0.2-1.el7
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires: /usr/bin/env /usr/bin/python3
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64
+Wrote: /home/rpmbuilder/rpmbuild/RPMS/noarch/pylibs-0.2-1.el7.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.jcxg5t
++ umask 022
++ cd /home/rpmbuilder/rpmbuild/BUILD
++ rm -fr /home/rpmbuilder/rpmbuild/BUILDROOT/pylibs-0.2-1.el7.x86_64
++ rm -fr /home/rpmbuilder/work/build
++ exit 0
